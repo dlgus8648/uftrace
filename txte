@@ -1,0 +1,52 @@
+[90muftrace: running uftrace  ( aarch64 dwarf python3 luajit tui perf sched dynamic )
+[0muftrace: checking binary test
+uftrace: skipping perf event due to error: Permission denied
+uftrace: please check /proc/sys/kernel/perf_event_paranoid
+uftrace: creating 1 thread(s) for recording
+uftrace: using /usr/local/lib/uftrace/libmcount.so library for tracing
+mcount: initializing mcount library
+plthook: setup PLT hooking "/home/kim/workdir/uftrace/test"
+mcount: mcount setup done
+mcount: new session started: a1abbe3891829125: test
+mcount: mcount trace finished
+mcount: exit from libmcount
+uftrace: child terminated with exit code: 0
+uftrace: reading uftrace.data/task.txt file
+uftrace: flushing /uftrace-a1abbe3891829125-129947-000
+[90muftrace: running uftrace  ( aarch64 dwarf python3 luajit tui perf sched dynamic )
+[0muftrace: checking binary abc
+uftrace: skipping perf event due to error: Permission denied
+uftrace: please check /proc/sys/kernel/perf_event_paranoid
+uftrace: creating 1 thread(s) for recording
+uftrace: using /usr/local/lib/uftrace/libmcount.so library for tracing
+mcount: initializing mcount library
+plthook: setup PLT hooking "/home/kim/workdir/uftrace/abc"
+mcount: mcount setup done
+mcount: new session started: 93101fe24b010fdf: abc
+mcount: mcount trace finished
+mcount: exit from libmcount
+uftrace: child terminated with exit code: 0
+uftrace: reading /tmp/uftrace-live-WnbIJF/task.txt file
+uftrace: flushing /uftrace-93101fe24b010fdf-130272-000
+uftrace: live-record finished.. 
+uftrace: start live-replaying...
+uftrace: reading /tmp/uftrace-live-WnbIJF/task.txt file
+fstack: fixup for some special functions
+uftrace: add field "duration"
+uftrace: add field "tid"
+uftrace: removing /tmp/uftrace-live-WnbIJF directory
+[90muftrace: running uftrace  ( aarch64 dwarf python3 luajit tui perf sched dynamic )
+[0muftrace: checking binary abc
+uftrace: skipping perf event due to error: Permission denied
+uftrace: please check /proc/sys/kernel/perf_event_paranoid
+uftrace: creating 1 thread(s) for recording
+uftrace: using /usr/local/lib/uftrace/libmcount.so library for tracing
+mcount: initializing mcount library
+plthook: setup PLT hooking "/home/kim/workdir/uftrace/abc"
+mcount: mcount setup done
+mcount: new session started: 21190531f03b2bfd: abc
+mcount: mcount trace finished
+mcount: exit from libmcount
+uftrace: child terminated with exit code: 0
+uftrace: reading uftrace.data/task.txt file
+uftrace: flushing /uftrace-21190531f03b2bfd-130349-000

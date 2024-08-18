@@ -1,0 +1,15 @@
+[90muftrace: running uftrace  ( aarch64 dwarf python3 luajit tui perf sched dynamic )
+[0muftrace: checking binary abc
+uftrace: skipping perf event due to error: Permission denied
+uftrace: please check /proc/sys/kernel/perf_event_paranoid
+uftrace: creating 1 thread(s) for recording
+uftrace: using /usr/local/lib/uftrace/libmcount.so library for tracing
+mcount: initializing mcount library
+plthook: setup PLT hooking "/home/kim/workdir/uftrace/abc"
+mcount: mcount setup done
+mcount: new session started: a46b900d37aacd62: abc
+mcount: mcount trace finished
+mcount: exit from libmcount
+uftrace: child terminated with exit code: 0
+uftrace: reading uftrace.data/task.txt file
+uftrace: flushing /uftrace-a46b900d37aacd62-135030-000

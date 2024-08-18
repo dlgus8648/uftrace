@@ -1459,13 +1459,17 @@ int main(int argc, char *argv[])
 		debug = 1;
 
 	if (opts.logfile) {
-		logfp = fopen(opts.logfile, "a");
+		char logfile[PATH_MAX];
+		snprintf(logfile, PATH_MAX, "%s/%s", opts.dirname, "logfile.txt");
+		logfp = fopen(logfile, "a");
 		if (logfp == NULL) {
 			logfp = stderr;
 			pr_err("cannot open log file");
 		}
 
 		setvbuf(logfp, NULL, _IOLBF, 1024);
+		fprintf(logfp, " log entry.\n");
+
 	}
 	else if (debug) {
 		/* ensure normal output is not mixed by debug message */
