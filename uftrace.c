@@ -1408,6 +1408,8 @@ int main(int argc, char *argv[])
 	int ret = -1;
 	char *pager = NULL;
 
+	logfile_flag = 1;//초기값 : true
+
 	/* this must be done before calling pr_*() */
 	logfp = stderr;
 	outfp = stdout;
@@ -1459,9 +1461,19 @@ int main(int argc, char *argv[])
 		debug = 1;
 
 	if (opts.logfile) {
-		char logfile[PATH_MAX];
-		snprintf(logfile, PATH_MAX, "%s/%s", opts.dirname, "logfile.txt");
-		logfp = fopen(logfile, "a");
+
+		char buf[PATH_MAX];
+		logfile_flag = false; //utils.c의 can_remove함수 피하기 위해서
+
+		
+		if (create_directory(opts.dirname) < 0)
+			return -1;
+
+
+		snprintf(buf, sizeof(buf), "%s/logfile.txt", opts.dirname); // uftrace.data 디렉토리에 logfile.txt생성
+
+
+		logfp = fopen(buf, "a");
 		if (logfp == NULL) {
 			logfp = stderr;
 			pr_err("cannot open log file");

@@ -34,6 +34,7 @@
 
 #define KB 1024
 #define MB (KB * 1024)
+extern volatile bool logfile_flag;
 
 struct uftrace_file_header {
 	char magic[UFTRACE_MAGIC_LEN];

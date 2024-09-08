@@ -18,6 +18,7 @@
 #include "utils/utils.h"
 
 volatile bool uftrace_done;
+volatile bool logfile_flag;
 
 /* default uftrace options to be applied for analysis commands */
 struct strv default_opts = STRV_INIT;
