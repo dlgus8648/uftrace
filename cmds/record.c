@@ -2275,8 +2275,13 @@ int command_record(int argc, char *argv[], struct uftrace_opts *opts)
 	check_perf_event(opts);
 
 	if (!opts->nop) {
+
+		if(logfile_flag){
+
 		if (create_directory(opts->dirname) < 0)
 			return -1;
+			
+		}
 
 		xasprintf(&channel, "%s/%s", opts->dirname, ".channel");
 		if (mkfifo(channel, 0600) < 0)
