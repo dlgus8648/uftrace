@@ -1,0 +1,2 @@
+uftrace: /home/kimrihyeon/uftrace/uftrace/cmds/recv.c:273:send_trace_metadata
+ ERROR: open example_data/logfile.txt failed: No such file or directory

@@ -1,0 +1,14 @@
+# symbols: 11
+# path name: /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1.0.9
+# build-id: 43a72967cf84155914c8b3e915926733d1e57c11
+0000000000000720 00000018 P __cxa_finalize
+0000000000001060 00000010 P free
+0000000000001070 00000010 P malloc
+00000000000012e0 0000000c T BrotliGetDictionary
+00000000000012f0 00000005 T BrotliSetDictionaryData
+0000000000001300 0000000c T BrotliDefaultAllocFunc
+0000000000001310 0000000c T BrotliDefaultFreeFunc
+0000000000001320 0000000c T BrotliGetTransforms
+0000000000001330 00000285 T BrotliTransformDictionaryWord
+0000000000002000 00000068 D _kBrotliPrefixCodeRanges
+0000000000002080 00000800 D _kBrotliContextLookupTable

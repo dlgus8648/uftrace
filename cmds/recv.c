@@ -268,6 +268,7 @@ void send_trace_metadata(int sock, const char *dirname, char *filename)
 	else
 		pathname = xstrdup(filename);
 
+	printf("send_trace_metadata : %s\n", pathname);
 	fd = open(pathname, O_RDONLY);
 	if (fd < 0)
 		pr_err("open %s failed", pathname);
@@ -511,6 +512,10 @@ static void recv_trace_metadata(int sock, int len)
 	if (read_all(sock, filename, namelen) < 0)
 		pr_err("recv file name failed");
 	filename[namelen] = '\0';
+	if(strcmp(filename, "txte") == 0)
+	{
+		printf("test");
+	}
 
 	len -= sizeof(namelen) + namelen;
 	filedata = xmalloc(len);

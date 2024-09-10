@@ -1,0 +1,2 @@
+SESS timestamp=20513.062681109 pid=28689 sid=38535a95f1286374 exename="/home/kimrihyeon/uftrace/uftrace/abc"
+TASK timestamp=20513.062804197 tid=28689 pid=28689
